@@ -1,0 +1,9 @@
+# First, ignore everything
+*
+
+# Whitelist relevant stuff
+!autoexec.cfg
+!pikles_settings.cfg
+!ui/
+!ui/*
+!.gitignore
