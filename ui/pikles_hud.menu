@@ -1,0 +1,599 @@
+/*
+ Quake Live Heads-Up Display
+ Default HUD - Edited Version (cleaned up, everything is labeled)
+ may 2009, Borgondio
+
+ Would you like to see a tutorial?
+ http://quakelivehud.blogspot.com
+
+*/
+
+
+// menu file has to start with the following line
+#include "ui/menudef.h"
+
+//******************************* HEALTH VALUE + HEALTH ICON *******************
+menuDef {
+        name "health value and icon"
+        visible 1
+        rect 193 300 87 26
+
+          itemDef {
+                  name "health icon shadow"
+                  backcolor 0 0 0 .8
+                  rect 1 9 18 18
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  background "ui/assets/hud/health.tga"
+                  }
+
+          itemDef {
+                  name "health icon"
+                  rect 0 8 18 18
+                  ownerdraw CG_TEAM_COLORIZED
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  background "ui/assets/hud/health.tga"
+                  }
+
+          itemDef {
+                  name "health value"
+                  rect 22 0 65 26
+                  visible 1
+                  textstyle ITEM_TEXTSTYLE_SHADOWED
+                  forecolor 1 1 1 1
+                  textscale .60
+                  ownerdraw CG_PLAYER_HEALTH
+                  addColorRange -999 50 1 0 0 1
+                  addColorRange 50 100 1 1 1 1
+                  addColorRange 101 999 0.29 0.65 1 1
+                  }
+}
+
+//************************************************* AMMO ***********************
+
+menuDef {
+        name "Ammo"
+        visible 1
+        rect 380 300 87 26
+
+        itemDef {
+                name "weapon icon"
+                  rect 45 7 20 20
+                  visible 1
+                  ownerdraw CG_PLAYER_AMMO_ICON2D
+                  }
+
+        itemDef {
+                  name "ammo number value"
+                  rect 0 0 60 12
+                  visible 1
+                textstyle ITEM_TEXTSTYLE_SHADOWED
+                textscale .60
+                ownerdraw CG_PLAYER_AMMO_VALUE
+                addColorRange -999 5 1 0 0 1
+                addColorRange 6 999 1 1 1 1
+                }
+}
+
+//******************************** ARMOR VALUE + ICON **************************
+menuDef {
+        name "Armor"
+          visible 1
+          rect 193 330 87 26
+
+         itemDef {
+                 name "armor icon shadow"
+                 backcolor 0 0 0 .8
+                 rect 2 4 15 15
+                 visible 1
+                 style WINDOW_STYLE_FILLED
+                 background "ui/assets/hud/armor.tga"
+                 }
+
+         itemDef {
+                 name "armor icon"
+                 ownerdraw CG_TEAM_COLORIZED
+                 rect 1 3 15 15
+                 visible 1
+                 style WINDOW_STYLE_FILLED
+                 background "ui/assets/hud/armor.tga"
+                 }
+
+         itemDef {
+                 name "armor value"
+                 rect 23 0 52 22
+                 visible 1
+                 textstyle ITEM_TEXTSTYLE_SHADOWED
+                 textscale .35
+                 ownerdraw CG_PLAYER_ARMOR_VALUE
+                 addColorRange -999 25 1 0.73 0 1
+                 addColorRange 26 100 1 1 1 1
+                 addColorRange 101 999 0 0.92 0.20 1
+                 }
+}
+
+//******************************************** TIMER **************
+
+menuDef {
+        name "Timer"
+        fullScreen MENU_FALSE
+        visible 1
+        rect 280 5 100 20
+
+      itemDef {
+              name "Win Limit"
+              rect 70 13 40 12
+              visible 1
+              textstyle ITEM_TEXTSTYLE_SHADOWED
+              forecolor 1 1 1 1
+              textscale .26
+              ownerdraw CG_CAPFRAGLIMIT
+              }
+
+      itemDef {
+                name "Timer"
+                rect 25 13 82 20
+                visible 1
+                textstyle ITEM_TEXTSTYLE_SHADOWED
+                forecolor 1 1 1 1
+                textscale .28
+                ownerdraw CG_LEVELTIMER
+              }
+
+      itemDef {
+                name "timer Icon shadow"
+                rect 6 1 14 14
+                style WINDOW_STYLE_FILLED
+                backcolor 0 0 0 .7
+                background "icons/icon_time.tga"
+                visible 1
+              }
+
+      itemDef {
+                name "timer Icon"
+                rect 5 0 14 14
+                style WINDOW_STYLE_FILLED
+                backcolor .7 .7 .7 .7
+                background "icons/icon_time.tga"
+                visible 1
+              }
+}
+
+//******************************* PLAYER SCORE - BACKGROUND HIGHLIGHT **********
+menuDef {
+          name "Score Background Highlight"
+          visible 1
+          rect 0 5 32 256
+
+        // if player is 1st place
+          itemDef {
+                  name "score highlight left"
+                  rect 0 2 16 16
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  background "ui/assets/hud/teamonl.tga"
+                  ownerdraw CG_TEAM_COLORIZED
+                  ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
+                  decoration
+                  }
+
+          itemDef {
+                  name "score highlight middle"
+                  rect 16 2 115 16
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  ownerdraw CG_TEAM_COLORIZED
+                  background "ui/assets/hud/teamonm.tga"
+                  ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
+                  decoration
+                  }
+
+          itemDef {
+                  name "score highlight right"
+                  rect 131 2 16 16
+                  visible 1
+                  ownerdraw CG_TEAM_COLORIZED
+                  ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
+                  style WINDOW_STYLE_FILLED
+                  background "ui/assets/hud/teamonr.tga"
+                  decoration
+                  }
+
+          // if player is 2nd place
+          itemDef {
+                  name "score highlight left"
+                  rect 0 19 16 16
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  background "ui/assets/hud/teamonl.tga"
+                  ownerdraw CG_TEAM_COLORIZED
+                  ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
+                  decoration
+                  }
+
+          itemDef {
+                  name "score highlight middle"
+                  rect 16 19 115 16
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  background "ui/assets/hud/teamonm.tga"
+                  ownerdraw CG_TEAM_COLORIZED
+                  ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
+                  decoration
+                  }
+
+          itemDef {
+                  name "score highlight right"
+                  rect 131 19 16 16
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  background "ui/assets/hud/teamonr.tga"
+                  ownerdraw CG_TEAM_COLORIZED
+                  ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
+                  decoration
+                  }
+}
+
+
+//************************************************************ SCORES **********
+
+menuDef {
+          name "scores"
+            fullScreen MENU_FALSE
+          visible 1
+          rect 2 5 120 40
+
+        itemDef {
+                name "1st place"
+                visible 1
+                rect 0 13 136 40
+                textscale .22
+                ownerdraw CG_1ST_PLACE_SCORE
+                decoration
+                }
+
+       itemDef {
+               name "2nd place"
+               visible 1
+               rect 0 30 136 40
+               textscale .22
+               ownerdraw CG_2ND_PLACE_SCORE
+               decoration
+               }
+
+}
+
+//**************************************************** PLAYER PICKUPS **********
+
+// POWERUPS - quad-damage, haste, regeneration, etc.
+menuDef {
+          name "powerup display"
+          visible 1
+          rect 5 70 48 24
+
+          itemDef {
+                  name "player powerup"
+                  rect 0 0 20 20
+                  visible 1
+                  ownerdraw CG_AREA_POWERUP
+                  special 4     //space between icons
+                  align HUD_VERTICAL
+                  }
+}
+
+// USEABLE ITEMS - kamikaze, invulnerability, medkit, teleporter
+menuDef {
+          name "usable items display"
+          visible 1
+          rect 272 442 26 26
+
+
+          itemDef {
+                name "player item"
+                rect 0 0 20 20
+                  visible 1
+                  ownerdraw CG_PLAYER_ITEM
+                  }
+}
+
+// TEAM POWERUPS - armor regen, doubler, guard, scout
+menuDef {
+          name "team powerups display"
+          visible MENU_TRUE
+          rect 345 442 26 26
+
+          itemDef {
+                name "player team powerup"
+                rect 90 0 20 20
+                  visible 1
+                  ownerdraw CG_CTF_POWERUP
+                  }
+}
+
+
+//*************************************************** PLAYER HAS FLAG **********
+menuDef {
+          name "player Has Flag"
+          visible 1
+          rect 300 442 26 26
+
+          itemDef {
+                  name "green flashing background"
+                  rect 0 0 40 36
+                  style WINDOW_STYLE_SHADER
+                  background "ui/assets/hud/flag"
+                  visible 1
+                  ownerdrawflag CG_SHOW_IF_PLAYER_HAS_FLAG
+                  }
+
+          itemDef {
+                  name "animated flag icon"
+                  rect 1 1 34 34
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  ownerdraw CG_PLAYER_HASFLAG
+                  }
+}
+
+//******************************************************** OBITUARIES **********
+// who killed who, what weapon they used
+menuDef {
+          name "obituaries area"
+          visible 1
+          rect 190 18 65 12
+
+        itemDef {
+                  name "obituaries"
+                rect 0 0 65 12
+                visible 1
+                  textscale .22
+                  ownerdraw CG_PLAYER_OBIT
+                  }
+}
+
+//********************************************************* CHAT AREA **********
+menuDef {
+          name "chat area"
+          visible 1
+          rect 0 0 32 256
+
+        itemDef {
+                name "chat display"
+                rect 5 287 634 120
+                visible 1
+                ownerdraw CG_AREA_NEW_CHAT
+                }
+}
+
+//**************************************** RED TEAM BAR - TOP ******************
+// IF RED TEAM IS 1ST PLACE
+// "TEAM HAS FLAG" FLASHING ALERT - CLAN ARENA SURVIVORS COUNT - RED FLAG STATUS
+menuDef {
+          name "Red Frame Team"
+          fullScreen MENU_FALSE
+          visible 1
+          rect 2 7 32 256
+          ownerdrawflag CG_SHOW_IF_RED_IS_FIRST_PLACE
+
+         itemDef {
+                 name "Team has flag alert Left"
+                 rect -4 0 128 16
+                 visible 1
+                 style WINDOW_STYLE_FILLED
+                 background "ui/assets/hud/rteambgl.tga"
+                 ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
+                 }
+
+         itemDef {
+                 name "Team has flag alert Right"
+                 rect 18 0 128 16
+                 visible 1
+                 style WINDOW_STYLE_FILLED
+                 background "ui/assets/hud/rteambgr.tga"
+                 ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
+                 }
+
+         itemDef {
+                   name "clan Arena count icon"
+                   rect 33 2 21 11
+                   visible 1
+                   style WINDOW_STYLE_FILLED
+                   ownerdrawflag CG_SHOW_CLAN_ARENA
+                   background "ui/assets/score/ca_score_red.tga"
+                 }
+
+         itemDef {
+                 name "red Clan survivors count"
+                 rect 45 11 136 40
+                 visible 1
+                 textscale .18
+                 forecolor 1 1 1 .65
+                 ownerdraw CG_RED_CLAN_PLYRS
+                 ownerdrawflag CG_SHOW_CLAN_ARENA
+                 decoration
+                 }
+
+        itemDef {
+                  name "red flag status icon"
+                  rect 0 2 10 10
+                  visible 1
+                  ownerdrawflag CG_SHOW_CTF
+                  ownerdraw CG_RED_FLAGSTATUS
+                }
+}
+
+//**************************************** RED TEAM BAR - BOTTOM ***************
+// IF RED TEAM IS 2ND PLACE
+// "TEAM HAS FLAG" FLASHING ALERT - CLAN ARENA SURVIVORS COUNT - RED FLAG STATUS
+menuDef {
+          name "Red Team Bar"
+          fullScreen MENU_FALSE
+          visible 1
+          rect 2 24 32 256
+          ownerdrawflag CG_SHOW_IF_BLUE_IS_FIRST_PLACE
+
+         itemDef {
+                 name "Team has flag alert Left"
+                 rect -4 0 128 16
+                 visible 1
+                 style WINDOW_STYLE_FILLED
+                 background "ui/assets/hud/rteambgl.tga"
+                 ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
+                 }
+
+         itemDef {
+                 name "Team has flag alert Right"
+                 rect 18 0 128 16
+                 visible 1
+                 style WINDOW_STYLE_FILLED
+                 background "ui/assets/hud/rteambgr.tga"
+                 ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
+                 }
+
+         itemDef {
+                   name "clan Arena count icon"
+                   rect 33 2 21 11
+                   visible 1
+                   style WINDOW_STYLE_FILLED
+                 ownerdrawflag CG_SHOW_CLAN_ARENA
+                   background "ui/assets/score/ca_score_red.tga"
+                 }
+
+         itemDef {
+                 name "red Clan survivors count"
+               rect 45 11 136 40
+               visible 1
+                 textscale .18
+                 forecolor 1 1 1 0.65
+                 ownerdraw CG_RED_CLAN_PLYRS
+                 ownerdrawflag CG_SHOW_CLAN_ARENA
+               decoration
+                 }
+
+        itemDef {
+                  name "red flag status icon"
+                  rect 0 2 10 10
+                  visible 1
+                  ownerdrawflag CG_SHOW_CTF
+                  ownerdraw CG_RED_FLAGSTATUS
+                }
+}
+//*************************************** BLUE TEAM BAR - TOP ******************
+// IF BLUE TEAM IS 1ST PLACE
+//"TEAM HAS FLAG" FLASHING ALERT - CLAN ARENA SURVIVORS COUNT - BLUE FLAG STATUS
+menuDef {
+          name "Blue Team Bar"
+            fullScreen MENU_FALSE
+          visible 1
+          rect 2 7 32 256
+          ownerdrawflag CG_SHOW_IF_BLUE_IS_FIRST_PLACE
+
+          itemDef {
+                  name "Team has flag alert Left"
+                  rect -4 0 128 16
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  background "ui/assets/hud/bteambgl.tga"
+                  ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
+                  }
+
+          itemDef {
+                  name "Team has flag alert Right"
+                  rect 18 0 128 16
+                  visible 1
+                  style WINDOW_STYLE_FILLED
+                  background "ui/assets/hud/bteambgr.tga"
+                  ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
+                  }
+
+          itemDef {
+                    name "clan Arena count icon"
+                    rect 33 2 21 11
+                    visible 1
+                    decoration
+                    style WINDOW_STYLE_FILLED
+                  ownerdrawflag CG_SHOW_CLAN_ARENA
+                    background "ui/assets/score/ca_score_blu.tga"
+                  }
+
+        itemDef {
+                  name "blue Clan survivors count"
+                rect 45 11 136 40
+                visible 1
+                  textscale .18
+                  forecolor 1 1 1 0.65
+                  ownerdraw CG_BLUE_CLAN_PLYRS
+                  ownerdrawflag CG_SHOW_CLAN_ARENA
+                decoration
+                  }
+
+          itemDef {
+                    name "blue flag status icon"
+                    rect 0 2 10 10
+                    visible 1
+                    ownerdrawflag CG_SHOW_CTF
+                    ownerdraw CG_BLUE_FLAGSTATUS
+                  }
+
+}
+
+//************************************ BLUE TEAM BAR - BOTTOM ******************
+// IF BLUE TEAM IS 2ND PLACE
+//"TEAM HAS FLAG" FLASHING ALERT - CLAN ARENA SURVIVORS COUNT - BLUE FLAG STATUS
+menuDef {
+          name "Blue Team Bar"
+            fullScreen MENU_FALSE
+          visible 1
+          rect 2 24 32 256
+          ownerdrawflag CG_SHOW_IF_RED_IS_FIRST_PLACE
+
+         itemDef {
+                 name "Team has flag alert Left"
+                 rect -4 0 128 16
+                 visible 1
+                 style WINDOW_STYLE_FILLED
+                 background "ui/assets/hud/bteambgl.tga"
+                 ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
+                 }
+
+         itemDef {
+                 name "Team has flag alert Right"
+                 rect 18 0 128 16
+                 visible 1
+                 style WINDOW_STYLE_FILLED
+                 background "ui/assets/hud/bteambgr.tga"
+                 ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
+                 }
+
+         itemDef {
+                   name "clan Arena count icon"
+                   rect 33 2 21 11
+                   visible 1
+                   style WINDOW_STYLE_FILLED
+                 ownerdrawflag CG_SHOW_CLAN_ARENA
+                   background "ui/assets/score/ca_score_blu.tga"
+                 }
+
+         itemDef {
+                 name "blue Clan survivors count"
+               rect 45 11 136 40
+               visible 1
+                 textscale .18
+                 forecolor 1 1 1 0.65
+                 ownerdraw CG_BLUE_CLAN_PLYRS
+                 ownerdrawflag CG_SHOW_CLAN_ARENA
+               decoration
+                 }
+
+         itemDef {
+                   name "blue flag status icon"
+                   rect 0 2 10 10
+                   visible 1
+                   ownerdrawflag CG_SHOW_CTF
+                   ownerdraw CG_BLUE_FLAGSTATUS
+                 }
+}
+
+//****************************************** END OF FILE ***********************
+
