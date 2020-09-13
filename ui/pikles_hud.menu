@@ -59,15 +59,15 @@ menuDef {
 
         itemDef {
                 name "weapon icon"
-                  rect 45 7 20 20
-                  visible 1
-                  ownerdraw CG_PLAYER_AMMO_ICON2D
-                  }
+                rect 45 7 20 20
+                visible 1
+                ownerdraw CG_PLAYER_AMMO_ICON2D
+                }
 
         itemDef {
-                  name "ammo number value"
-                  rect 0 0 60 12
-                  visible 1
+                name "ammo number value"
+                rect 0 0 60 12
+                visible 1
                 textstyle ITEM_TEXTSTYLE_SHADOWED
                 textscale .60
                 ownerdraw CG_PLAYER_AMMO_VALUE
@@ -85,7 +85,7 @@ menuDef {
          itemDef {
                  name "armor icon shadow"
                  backcolor 0 0 0 .8
-                 rect 2 4 15 15
+                 rect 2 5 16 16
                  visible 1
                  style WINDOW_STYLE_FILLED
                  background "ui/assets/hud/armor.tga"
@@ -94,7 +94,7 @@ menuDef {
          itemDef {
                  name "armor icon"
                  ownerdraw CG_TEAM_COLORIZED
-                 rect 1 3 15 15
+                 rect 1 4 16 16
                  visible 1
                  style WINDOW_STYLE_FILLED
                  background "ui/assets/hud/armor.tga"
@@ -105,7 +105,7 @@ menuDef {
                  rect 23 0 52 22
                  visible 1
                  textstyle ITEM_TEXTSTYLE_SHADOWED
-                 textscale .35
+                 textscale .4
                  ownerdraw CG_PLAYER_ARMOR_VALUE
                  addColorRange -999 25 1 0.73 0 1
                  addColorRange 26 100 1 1 1 1
