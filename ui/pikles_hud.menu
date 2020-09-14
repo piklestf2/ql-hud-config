@@ -59,7 +59,7 @@ menuDef {
 
         itemDef {
                 name "weapon icon"
-                rect 45 7 20 20
+                rect 55 7 20 20
                 visible 1
                 ownerdraw CG_PLAYER_AMMO_ICON2D
                 }
