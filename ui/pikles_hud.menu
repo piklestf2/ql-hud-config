@@ -12,6 +12,166 @@
 // menu file has to start with the following line
 #include "ui/menudef.h"
 
+//****************************************** VILE CROSSHAIR ********************
+
+menuDef {
+        name "vile crosshair"
+        visible 1
+        rect 310 230 20 20
+
+        itemDef {
+                name "dot"
+                visible 1
+                backcolor 0 1 0 1
+                rect 10 10 1 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gleft"
+                visible 1
+                backcolor 0.39 1 0.39 0.39
+                rect 1 10 5 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gleft2"
+                visible 1
+                backcolor 0.78 1 0.78 1
+                rect 0 9 1 3
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gleft3"
+                visible 1
+                backcolor 0.78 1 0.78 0.59
+                rect 1 9 1 3
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gright"
+                visible 1
+                backcolor 0.39 1 0.39 0.39
+                rect 15 10 5 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gright3"
+                visible 1
+                backcolor 0.78 1 0.78 1
+                rect 20 9 1 3
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gright3"
+                visible 1
+                backcolor 0.78 1 0.78 0.59
+                rect 19 9 1 3
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gtop"
+                visible 1
+                backcolor 0.39 1 0.39 0.39
+                rect 10 1 1 5
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gtop2"
+                visible 1
+                backcolor 0.78 1 0.78 1
+                rect 9 0 3 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gtop3"
+                visible 1
+                backcolor 0.78 1 0.78 0.59
+                rect 9 1 3 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gbot"
+                visible 1
+                backcolor 0.39 1 0.39 0.39
+                rect 10 15 1 5
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gbot2"
+                visible 1
+                backcolor 0.78 1 0.78 1
+                rect 9 20 3 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "gbot3"
+                visible 1
+                backcolor 0.78 1 0.78 0.59
+                rect 9 19 3 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "hmid"
+                visible 1
+                backcolor 0.69 0.69 0.69 0.20
+                rect 0 10 20 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "htop"
+                visible 1
+                backcolor 0 0 0 0.39
+                rect 0 9 20 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "hbot"
+                visible 1
+                backcolor 0 0 0 0.39
+                rect 0 11 20 1
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "vmid"
+                visible 1
+                backcolor 0.69 0.69 0.69 0.20
+                rect 10 0 1 20
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "vleft"
+                visible 1
+                backcolor 0 0 0 0.39
+                rect 9 0 1 20
+                style WINDOW_STYLE_FILLED
+                }
+
+        itemDef {
+                name "vright"
+                visible 1
+                backcolor 0 0 0 0.39
+                rect 11 0 1 20
+                style WINDOW_STYLE_FILLED
+                }
+}
+
 //******************************* HEALTH VALUE + HEALTH ICON *******************
 menuDef {
         name "health value and icon"
