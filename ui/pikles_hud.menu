@@ -25,7 +25,7 @@ menuDef {
                 backcolor 0 1 0 1
                 rect 10 10 1 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gleft"
@@ -33,7 +33,7 @@ menuDef {
                 backcolor 0.39 1 0.39 0.39
                 rect 1 10 5 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gleft2"
@@ -41,7 +41,7 @@ menuDef {
                 backcolor 0.78 1 0.78 1
                 rect 0 9 1 3
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gleft3"
@@ -49,7 +49,7 @@ menuDef {
                 backcolor 0.78 1 0.78 0.59
                 rect 1 9 1 3
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gright"
@@ -57,7 +57,7 @@ menuDef {
                 backcolor 0.39 1 0.39 0.39
                 rect 15 10 5 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gright3"
@@ -65,7 +65,7 @@ menuDef {
                 backcolor 0.78 1 0.78 1
                 rect 20 9 1 3
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gright3"
@@ -73,7 +73,7 @@ menuDef {
                 backcolor 0.78 1 0.78 0.59
                 rect 19 9 1 3
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gtop"
@@ -81,7 +81,7 @@ menuDef {
                 backcolor 0.39 1 0.39 0.39
                 rect 10 1 1 5
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gtop2"
@@ -89,7 +89,7 @@ menuDef {
                 backcolor 0.78 1 0.78 1
                 rect 9 0 3 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gtop3"
@@ -97,7 +97,7 @@ menuDef {
                 backcolor 0.78 1 0.78 0.59
                 rect 9 1 3 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gbot"
@@ -105,7 +105,7 @@ menuDef {
                 backcolor 0.39 1 0.39 0.39
                 rect 10 15 1 5
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gbot2"
@@ -113,7 +113,7 @@ menuDef {
                 backcolor 0.78 1 0.78 1
                 rect 9 20 3 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "gbot3"
@@ -121,7 +121,7 @@ menuDef {
                 backcolor 0.78 1 0.78 0.59
                 rect 9 19 3 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "hmid"
@@ -129,7 +129,7 @@ menuDef {
                 backcolor 0.69 0.69 0.69 0.20
                 rect 0 10 20 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "htop"
@@ -137,7 +137,7 @@ menuDef {
                 backcolor 0 0 0 0.39
                 rect 0 9 20 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "hbot"
@@ -145,7 +145,7 @@ menuDef {
                 backcolor 0 0 0 0.39
                 rect 0 11 20 1
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "vmid"
@@ -153,7 +153,7 @@ menuDef {
                 backcolor 0.69 0.69 0.69 0.20
                 rect 10 0 1 20
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "vleft"
@@ -161,7 +161,7 @@ menuDef {
                 backcolor 0 0 0 0.39
                 rect 9 0 1 20
                 style WINDOW_STYLE_FILLED
-                }
+        }
 
         itemDef {
                 name "vright"
@@ -169,7 +169,7 @@ menuDef {
                 backcolor 0 0 0 0.39
                 rect 11 0 1 20
                 style WINDOW_STYLE_FILLED
-                }
+        }
 }
 
 //******************************* HEALTH VALUE + HEALTH ICON *******************
@@ -185,7 +185,7 @@ menuDef {
                 visible 1
                 style WINDOW_STYLE_FILLED
                 background "ui/assets/hud/health.tga"
-                }
+        }
 
         itemDef {
                 name "health icon"
@@ -194,7 +194,7 @@ menuDef {
                 visible 1
                 style WINDOW_STYLE_FILLED
                 background "ui/assets/hud/health.tga"
-                }
+        }
 
         itemDef {
                 name "health value"
@@ -207,7 +207,7 @@ menuDef {
                 addColorRange -999 50 1 0.29 0.29 1
                 addColorRange 50 100 1 1 1 1
                 addColorRange 101 999 0.29 0.65 1 1
-                }
+        }
 }
 
 //************************************************* AMMO ***********************
@@ -222,7 +222,7 @@ menuDef {
                 rect 55 7 20 20
                 visible 1
                 ownerdraw CG_PLAYER_AMMO_ICON2D
-                }
+        }
 
         itemDef {
                 name "ammo number value"
@@ -233,7 +233,7 @@ menuDef {
                 ownerdraw CG_PLAYER_AMMO_VALUE
                 addColorRange -999 5 1 0 0 1
                 addColorRange 6 999 1 1 1 1
-                }
+        }
 }
 
 //******************************** ARMOR VALUE + ICON **************************
@@ -249,7 +249,7 @@ menuDef {
                 visible 1
                 style WINDOW_STYLE_FILLED
                 background "ui/assets/hud/armor.tga"
-                }
+        }
 
         itemDef {
                 name "armor icon"
@@ -258,7 +258,7 @@ menuDef {
                 visible 1
                 style WINDOW_STYLE_FILLED
                 background "ui/assets/hud/armor.tga"
-                }
+        }
 
         itemDef {
                 name "armor value"
@@ -270,7 +270,7 @@ menuDef {
                 addColorRange -999 25 1 0.73 0 1
                 addColorRange 26 100 1 1 1 1
                 addColorRange 101 999 0.25 0.92 0 1
-                }
+        }
 }
 
 //******************************************** TIMER **************
@@ -291,15 +291,95 @@ menuDef {
                 forecolor 1 1 1 1
                 textscale .32
                 ownerdraw CG_LEVELTIMER
-                }
+        }
 }
 
 //************************************************************ SCORES **********
 
-// TODO: add winlimit again
+menuDef {
+        name "ScoreFrame"
+        widescreen WIDESCREEN_LEFT
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 2 0 32 256
+
+		//Score Frame BG, can be scaled wider if needed to make more room for names
+		itemDef {
+                name "scoreboxbg"
+                rect 2 5 180 36
+                visible 1
+                decoration
+                backcolor 0 0 0 0.25
+                style WINDOW_STYLE_FILLED
+        }
+
+		//GAMETYPE ICON
+		itemDef {
+                name "gameType"
+                rect 7 8 18 18
+                style WINDOW_STYLE_EMPTY
+                backcolor 1 1 1 1
+                ownerdraw CG_GAME_TYPE_ICON
+                visible 1
+                decoration
+        }
+
+		//WIN VALUE
+		itemDef {
+                name "WinLimit"
+                align ITEM_ALIGN_CENTER
+                rect 16 38 40 12
+                visible 1
+                decoration
+                forecolor 1 1 1 0.6
+                textscale .24
+                ownerdraw CG_CAPFRAGLIMIT
+        }
+
+		itemDef {
+                name "Round"
+                align 1
+                style WINDOW_STYLE_EMPTY
+                rect 19 49 20 8
+                visible 1
+                decoration
+                forecolor 1 1 1 0.6
+                textscale .14
+                ownerdraw CG_ROUND
+                cvarTest "cg_gametype"
+                showCvar { "12" }
+        }
+
+		//GAME TIME
+		itemDef {
+                name "roundTimer"
+                align ITEM_ALIGN_LEFT
+                style WINDOW_STYLE_EMPTY
+                rect 9 55 50 12
+                visible 1
+                textstyle ITEM_TEXTSTYLE_SHADOWED
+                decoration
+                forecolor 0.73 0.73 0.73 0.7
+                textscale .22
+                ownerdraw CG_ROUNDTIMER
+        }
+
+		itemDef {
+                name "overtime"
+                align ITEM_ALIGN_LEFT
+                style WINDOW_STYLE_EMPTY
+                rect 9 55 50 12
+                visible 1
+                textstyle ITEM_TEXTSTYLE_SHADOWED
+                decoration
+                forecolor 1 1 1 0.5
+                textscale .22
+                ownerdraw CG_OVERTIME
+        }
+}
 
 // RED TEAM BAR TOP
-	menuDef {
+menuDef {
     	name "RedFrameTeam"
         widescreen WIDESCREEN_LEFT
     	fullScreen MENU_FALSE
@@ -309,448 +389,448 @@ menuDef {
 
 		//red team flag alert - align to right
 		itemDef {
-			name "TeamRLeft"
-			rect 0 0 128 16
-			visible 1
-			decoration
-			backcolor 1 0 0 0.3
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/rteambgl.tga"
-			ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
-		}
+                name "TeamRLeft"
+                rect 31 0 128 16
+                visible 1
+                decoration
+                backcolor 1 0 0 0.3
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/rteambgl.tga"
+                ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
+        }
 
 		//red team flag alert - align to right
 		itemDef {
-			name "TeamRLeft"
-			rect 20 0 128 16
-			visible 1
-			decoration
-			backcolor 1 0 0 0.3
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/rteambgr.tga"
-			ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
-		}
+                name "TeamRLeft"
+                rect 51 0 128 16
+                visible 1
+                decoration
+                backcolor 1 0 0 0.3
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/rteambgr.tga"
+                ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
+        }
 
 		//red team info
 
 		// rr
-			itemDef {
-			name "TeamRRIcon"
-			rect 152 2 21 11
-			visible 1
-			textscale .18
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/score/rr_remaining_team.tga"
-			cvarTest "cg_gametype"
-			showCvar { "12" }
-		}
+        itemDef {
+                name "TeamRRIcon"
+                rect 183 2 21 11
+                visible 1
+                textscale .18
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/score/rr_remaining_team.tga"
+                cvarTest "cg_gametype"
+                showCvar { "12" }
+        }
 
 		itemDef {
-			name "TeamRRPlayers"
-			rect 164 11 21 11
-			ownerdraw CG_TEAM_PLYR_COUNT
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-			style WINDOW_STYLE_FILLED
-			cvarTest "cg_gametype"
-			showCvar { "12" }
-		}
+                name "TeamRRPlayers"
+                rect 195 11 21 11
+                ownerdraw CG_TEAM_PLYR_COUNT
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+                style WINDOW_STYLE_FILLED
+                cvarTest "cg_gametype"
+                showCvar { "12" }
+        }
 
 		itemDef {
-			name "EnemyRRIcon"
-			rect 152 15 21 11
-			visible 1
-			textscale .18
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/score/rr_remaining_enemy.tga"
-			cvarTest "cg_gametype"
-			showCvar { "12" }
-		}
+                name "EnemyRRIcon"
+                rect 183 15 21 11
+                visible 1
+                textscale .18
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/score/rr_remaining_enemy.tga"
+                cvarTest "cg_gametype"
+                showCvar { "12" }
+        }
 
 		itemDef {
-			name "EnemyRRPlayers"
-			rect 164 24 21 11
-			ownerdraw CG_ENEMY_PLYR_COUNT
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-			style WINDOW_STYLE_FILLED
-			cvarTest "cg_gametype"
-			showCvar { "12" }
-		}
+                name "EnemyRRPlayers"
+                rect 195 24 21 11
+                ownerdraw CG_ENEMY_PLYR_COUNT
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+                style WINDOW_STYLE_FILLED
+                cvarTest "cg_gametype"
+                showCvar { "12" }
+        }
 
 		//clan arena count
 		itemDef {
-			name "clanArena"
-			rect 2 2 21 11
-			visible 1
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			ownerdrawflag CG_SHOW_PLAYERS_REMAINING
-			background "ui/assets/score/ca_score_red.tga"
-			cvarTest "cg_gametype"
-			hideCvar { "12" }
-		}
+                name "clanArena"
+                rect 33 2 21 11
+                visible 1
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdrawflag CG_SHOW_PLAYERS_REMAINING
+                background "ui/assets/score/ca_score_red.tga"
+                cvarTest "cg_gametype"
+                hideCvar { "12" }
+        }
 
 		itemDef {
-			name "redClanPlayers"
-			ownerdrawflag CG_SHOW_PLAYERS_REMAINING
-			ownerdraw CG_RED_CLAN_PLYRS
-			rect 14 11 136 40
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-			cvarTest "cg_gametype"
-			hideCvar { "12" }
-		}
+                name "redClanPlayers"
+                ownerdrawflag CG_SHOW_PLAYERS_REMAINING
+                ownerdraw CG_RED_CLAN_PLYRS
+                rect 45 11 136 40
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+                cvarTest "cg_gametype"
+                hideCvar { "12" }
+        }
 
 		itemDef {
-			name "domination"
-			rect 2 2 21 11
-			visible 1
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			ownerdrawflag CG_SHOW_DOMINATION
-			background "ui/assets/score/dom_score_red.tga"
-		}
+                name "domination"
+                rect 33 2 21 11
+                visible 1
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdrawflag CG_SHOW_DOMINATION
+                background "ui/assets/score/dom_score_red.tga"
+        }
 
 		itemDef {
-			name "redDomFlags"
-			ownerdrawflag CG_SHOW_DOMINATION
-			ownerdraw CG_RED_OWNED_FLAGS
-			rect 14 11 136 40
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-		}
+                name "redDomFlags"
+                ownerdrawflag CG_SHOW_DOMINATION
+                ownerdraw CG_RED_OWNED_FLAGS
+                rect 45 11 136 40
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+        }
 
 		itemDef {
-			name "domination"
-			rect 2 2 21 11
-			visible 1
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			ownerdrawflag CG_SHOW_DOMINATION
-			background "ui/assets/score/dom_score_red.tga"
-		}
+                name "domination"
+                rect 33 2 21 11
+                visible 1
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdrawflag CG_SHOW_DOMINATION
+                background "ui/assets/score/dom_score_red.tga"
+        }
 
 		itemDef {
-			name "redDomFlags"
-			ownerdrawflag CG_SHOW_DOMINATION
-			ownerdraw CG_RED_OWNED_FLAGS
-			rect 14 11 136 40
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-		}
+                name "redDomFlags"
+                ownerdrawflag CG_SHOW_DOMINATION
+                ownerdraw CG_RED_OWNED_FLAGS
+                rect 45 11 136 40
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+        }
 
 		itemDef {
-			name "f"
-			rect 5 1 13 13
-			visible 1
-			decoration
-			ownerdrawflag CG_SHOW_CTF
-			ownerdraw CG_RED_FLAGSTATUS
-		}
-	}
+                name "f"
+                rect 36 1 13 13
+                visible 1
+                decoration
+                ownerdrawflag CG_SHOW_CTF
+                ownerdraw CG_RED_FLAGSTATUS
+        }
+}
 
 // RED TEAM BAR BOTTOM
-	menuDef {
-			name "RedFrameTeam"
-			widescreen WIDESCREEN_LEFT
-			fullScreen MENU_FALSE
-			visible MENU_TRUE
-			rect 2 24 32 256
-			ownerdrawflag CG_SHOW_IF_BLUE_IS_FIRST_PLACE
+menuDef {
+        name "RedFrameTeam"
+        widescreen WIDESCREEN_LEFT
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 2 24 32 256
+        ownerdrawflag CG_SHOW_IF_BLUE_IS_FIRST_PLACE
 
 		//red team flag alert - align to right
 		itemDef {
-			name "TeamRLeft"
-			rect 0 0 128 16
-			visible 1
-			decoration
-			backcolor 1 0 0 0.3
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/rteambgl.tga"
-			ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
-		}
+                name "TeamRLeft"
+                rect 31 0 128 16
+                visible 1
+                decoration
+                backcolor 1 0 0 0.3
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/rteambgl.tga"
+                ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
+        }
 
 		//red team flag alert - align to right
 		itemDef {
-			name "TeamRLeft"
-			rect 20 0 128 16
-			visible 1
-			decoration
-			backcolor 1 0 0 0.3
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/rteambgr.tga"
-			ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
-		}
+                name "TeamRLeft"
+                rect 51 0 128 16
+                visible 1
+                decoration
+                backcolor 1 0 0 0.3
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/rteambgr.tga"
+                ownerdrawflag CG_SHOW_RED_TEAM_HAS_BLUEFLAG
+        }
 
 		//red team info
 
 		//clan arena count
 		itemDef {
-			name "clanArena"
-			rect 2 2 21 11
-			visible 1
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			ownerdrawflag CG_SHOW_PLAYERS_REMAINING
-			background "ui/assets/score/ca_score_red.tga"
-			cvarTest "cg_gametype"
-			hideCvar { "12" }
-		}
+                name "clanArena"
+                rect 33 2 21 11
+                visible 1
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdrawflag CG_SHOW_PLAYERS_REMAINING
+                background "ui/assets/score/ca_score_red.tga"
+                cvarTest "cg_gametype"
+                hideCvar { "12" }
+        }
 
 		itemDef {
-			name "redClanPlayers"
-			ownerdrawflag CG_SHOW_PLAYERS_REMAINING
-			ownerdraw CG_RED_CLAN_PLYRS
-			rect 14 11 136 40
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-			cvarTest "cg_gametype"
-			hideCvar { "12" }
-		}
+                name "redClanPlayers"
+                ownerdrawflag CG_SHOW_PLAYERS_REMAINING
+                ownerdraw CG_RED_CLAN_PLYRS
+                rect 45 11 136 40
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+                cvarTest "cg_gametype"
+                hideCvar { "12" }
+        }
 
 		itemDef {
-			name "domination"
-			rect 2 2 21 11
-			visible 1
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			ownerdrawflag CG_SHOW_DOMINATION
-			background "ui/assets/score/dom_score_red.tga"
-		}
+                name "domination"
+                rect 33 2 21 11
+                visible 1
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdrawflag CG_SHOW_DOMINATION
+                background "ui/assets/score/dom_score_red.tga"
+        }
 
 		itemDef {
-			name "redDomFlags"
-			ownerdrawflag CG_SHOW_DOMINATION
-			ownerdraw CG_RED_OWNED_FLAGS
-			rect 14 11 136 40
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-		}
+                name "redDomFlags"
+                ownerdrawflag CG_SHOW_DOMINATION
+                ownerdraw CG_RED_OWNED_FLAGS
+                rect 45 11 136 40
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+        }
 
 		itemDef {
-			name "f"
-			rect 5 1 13 13
-			visible 1
-			decoration
-			ownerdrawflag CG_SHOW_CTF
-			ownerdraw CG_RED_FLAGSTATUS
-		}
-	}
+                name "f"
+                rect 36 1 13 13
+                visible 1
+                decoration
+                ownerdrawflag CG_SHOW_CTF
+                ownerdraw CG_RED_FLAGSTATUS
+        }
+}
 
 // BLUE TEAM BAR TOP
-	menuDef {
-			name "BlueFrameTeam"
-			widescreen WIDESCREEN_LEFT
-			fullScreen MENU_FALSE
-			visible MENU_TRUE
-			rect 2 7 32 256
-			ownerdrawflag CG_SHOW_IF_BLUE_IS_FIRST_PLACE
+menuDef {
+        name "BlueFrameTeam"
+        widescreen WIDESCREEN_LEFT
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 2 7 32 256
+        ownerdrawflag CG_SHOW_IF_BLUE_IS_FIRST_PLACE
 
 		//blue team flag alert - align to left
 		itemDef {
-			name "TeamBLeft"
-			rect 0 0 128 16
-			visible 1
-			decoration
-			backcolor 0.25 0.25 1 0.3
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/bteambgl.tga"
-			ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
-		}
+                name "TeamBLeft"
+                rect 31 0 128 16
+                visible 1
+                decoration
+                backcolor 0.25 0.25 1 0.3
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/bteambgl.tga"
+                ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
+        }
 
 		//blue team flag alert - align to right
 		itemDef {
-			name "TeamBLeft"
-			rect 20 0 128 16
-			visible 1
-			decoration
-			backcolor 0.25 0.25 1 0.3
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/bteambgr.tga"
-			ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
-		}
+                name "TeamBLeft"
+                rect 51 0 128 16
+                visible 1
+                decoration
+                backcolor 0.25 0.25 1 0.3
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/bteambgr.tga"
+                ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
+        }
 
 		//blue team info
 
 		//clan arena count
 		itemDef {
-			name "clanArena"
-			rect 2 2 21 11
-			visible 1
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			ownerdrawflag CG_SHOW_PLAYERS_REMAINING
-			background "ui/assets/score/ca_score_blu.tga"
-			cvarTest "cg_gametype"
-			hideCvar { "12" }
-		}
+                name "clanArena"
+                rect 33 2 21 11
+                visible 1
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdrawflag CG_SHOW_PLAYERS_REMAINING
+                background "ui/assets/score/ca_score_blu.tga"
+                cvarTest "cg_gametype"
+                hideCvar { "12" }
+        }
 
 		itemDef {
-			name "blueClanPlayers"
-			ownerdrawflag CG_SHOW_PLAYERS_REMAINING
-			ownerdraw CG_BLUE_CLAN_PLYRS
-			rect 14 11 136 40
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-			cvarTest "cg_gametype"
-			hideCvar { "12" }
-		}
+                name "blueClanPlayers"
+                ownerdrawflag CG_SHOW_PLAYERS_REMAINING
+                ownerdraw CG_BLUE_CLAN_PLYRS
+                rect 45 11 136 40
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+                cvarTest "cg_gametype"
+                hideCvar { "12" }
+        }
 
 		itemDef {
-			name "domination"
-			rect 2 2 21 11
-			visible 1
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			ownerdrawflag CG_SHOW_DOMINATION
-			background "ui/assets/score/dom_score_blu.tga"
-		}
+                name "domination"
+                rect 33 2 21 11
+                visible 1
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdrawflag CG_SHOW_DOMINATION
+                background "ui/assets/score/dom_score_blu.tga"
+        }
 
 		itemDef {
-			name "blueDomFlags"
-			ownerdrawflag CG_SHOW_DOMINATION
-			ownerdraw CG_BLUE_OWNED_FLAGS
-			rect 14 11 136 40
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-		}
+                name "blueDomFlags"
+                ownerdrawflag CG_SHOW_DOMINATION
+                ownerdraw CG_BLUE_OWNED_FLAGS
+                rect 45 11 136 40
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+        }
 
 		itemDef {
-			name "blueflag"
-			rect 5 1 13 13
-			visible 1
-			decoration
-			ownerdrawflag CG_SHOW_CTF
-			ownerdraw CG_BLUE_FLAGSTATUS
-		}
-	}
+                name "blueflag"
+                rect 36 1 13 13
+                visible 1
+                decoration
+                ownerdrawflag CG_SHOW_CTF
+                ownerdraw CG_BLUE_FLAGSTATUS
+        }
+}
 
 // BLUE TEAM BAR BOTTOM
-	menuDef {
-			name "BlueFrameTeam"
-			widescreen WIDESCREEN_LEFT
-			fullScreen MENU_FALSE
-			visible MENU_TRUE
-			rect 2 24 32 256
-			ownerdrawflag CG_SHOW_IF_RED_IS_FIRST_PLACE
+menuDef {
+        name "BlueFrameTeam"
+        widescreen WIDESCREEN_LEFT
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 2 24 32 256
+        ownerdrawflag CG_SHOW_IF_RED_IS_FIRST_PLACE
 
 		//blue team flag alert - align to left
 		itemDef {
-			name "TeamBLeft"
-			rect 0 0 128 16
-			visible 1
-			decoration
-			backcolor 0.25 0.25 1 0.3
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/bteambgl.tga"
-			ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
-		}
+                name "TeamBLeft"
+                rect 31 0 128 16
+                visible 1
+                decoration
+                backcolor 0.25 0.25 1 0.3
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/bteambgl.tga"
+                ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
+        }
 
 		//blue team flag alert - align to right
 		itemDef {
-			name "TeamBLeft"
-			rect 20 0 128 16
-			visible 1
-			decoration
-			backcolor 0.25 0.25 1 0.3
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/bteambgr.tga"
-			ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
-		}
+                name "TeamBLeft"
+                rect 51 0 128 16
+                visible 1
+                decoration
+                backcolor 0.25 0.25 1 0.3
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/bteambgr.tga"
+                ownerdrawflag CG_SHOW_BLUE_TEAM_HAS_REDFLAG
+        }
 
 		//blue team info
 
 		//clan arena count
 		itemDef {
-			name "clanArena"
-			rect 2 2 21 11
-			visible 1
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			ownerdrawflag CG_SHOW_PLAYERS_REMAINING
-			background "ui/assets/score/ca_score_blu.tga"
-			cvarTest "cg_gametype"
-			hideCvar { "12" }
-		}
+                name "clanArena"
+                rect 33 2 21 11
+                visible 1
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdrawflag CG_SHOW_PLAYERS_REMAINING
+                background "ui/assets/score/ca_score_blu.tga"
+                cvarTest "cg_gametype"
+                hideCvar { "12" }
+        }
 
 		itemDef {
-			name "blueClanPlayers"
-			ownerdrawflag CG_SHOW_PLAYERS_REMAINING
-			ownerdraw CG_BLUE_CLAN_PLYRS
-			rect 14 11 136 40
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-			cvarTest "cg_gametype"
-			hideCvar { "12" }
-		}
+                name "blueClanPlayers"
+                ownerdrawflag CG_SHOW_PLAYERS_REMAINING
+                ownerdraw CG_BLUE_CLAN_PLYRS
+                rect 45 11 136 40
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+                cvarTest "cg_gametype"
+                hideCvar { "12" }
+        }
 
 		itemDef {
-			name "domination"
-			rect 2 2 21 11
-			visible 1
-			backcolor 1 1 1 1
-			decoration
-			style WINDOW_STYLE_FILLED
-			ownerdrawflag CG_SHOW_DOMINATION
-			background "ui/assets/score/dom_score_blu.tga"
-		}
+                name "domination"
+                rect 33 2 21 11
+                visible 1
+                backcolor 1 1 1 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdrawflag CG_SHOW_DOMINATION
+                background "ui/assets/score/dom_score_blu.tga"
+        }
 
 		itemDef {
-			name "blueDomFlags"
-			ownerdrawflag CG_SHOW_DOMINATION
-			ownerdraw CG_BLUE_OWNED_FLAGS
-			rect 14 11 136 40
-			visible 1
-			textscale .18
-			forecolor 1 1 1 0.65
-			decoration
-		}
+                name "blueDomFlags"
+                ownerdrawflag CG_SHOW_DOMINATION
+                ownerdraw CG_BLUE_OWNED_FLAGS
+                rect 45 11 136 40
+                visible 1
+                textscale .18
+                forecolor 1 1 1 0.65
+                decoration
+        }
 
 		itemDef {
-			name "blueflag"
-			rect 5 1 13 13
-			visible 1
-			decoration
-			ownerdrawflag CG_SHOW_CTF
-			ownerdraw CG_BLUE_FLAGSTATUS
-		}
-	}
+                name "blueflag"
+                rect 36 1 13 13
+                visible 1
+                decoration
+                ownerdrawflag CG_SHOW_CTF
+                ownerdraw CG_BLUE_FLAGSTATUS
+        }
+}
 
 // DM/TOURNAMENT BAR
-	menuDef {
+menuDef {
     	name "SelfFrameHighlights"
         widescreen WIDESCREEN_LEFT
     	fullScreen MENU_FALSE
@@ -759,100 +839,100 @@ menuDef {
 
 		//self top highlight
 		itemDef {
-			name "SelfTLeft"
-			rect 1 0 16 16
-			visible 1
-			decoration
-			ownerdraw CG_TEAM_COLORIZED
-			ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/teamonl.tga"
-		}
+                name "SelfTLeft"
+                rect 32 0 16 16
+                visible 1
+                decoration
+                ownerdraw CG_TEAM_COLORIZED
+                ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/teamonl.tga"
+        }
 
 		itemDef {
-			name "SelfTMid"
-			rect 17 0 115 16
-			visible 1
-			decoration
-			ownerdraw CG_TEAM_COLORIZED
-			ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/teamonm.tga"
-		}
+                name "SelfTMid"
+                rect 48 0 115 16
+                visible 1
+                decoration
+                ownerdraw CG_TEAM_COLORIZED
+                ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/teamonm.tga"
+        }
 
 		itemDef {
-			name "SelfTLeft"
-			rect 132 0 16 16
-			visible 1
-			decoration
-			ownerdraw CG_TEAM_COLORIZED
-			ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/teamonr.tga"
-		}
+                name "SelfTLeft"
+                rect 163 0 16 16
+                visible 1
+                decoration
+                ownerdraw CG_TEAM_COLORIZED
+                ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/teamonr.tga"
+        }
 
 		//self bottom highlight
 		itemDef {
-			name "SelfBLeft"
-			rect 1 17 16 16
-			visible 1
-			decoration
-			ownerdraw CG_TEAM_COLORIZED
-			ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/teamonl.tga"
-		}
+                name "SelfBLeft"
+                rect 32 17 16 16
+                visible 1
+                decoration
+                ownerdraw CG_TEAM_COLORIZED
+                ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/teamonl.tga"
+        }
 
 		itemDef {
-			name "SelfBMid"
-			rect 17 17 115 16
-			visible 1
-			decoration
-			ownerdraw CG_TEAM_COLORIZED
-			ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/teamonm.tga"
-		}
+                name "SelfBMid"
+                rect 48 17 115 16
+                visible 1
+                decoration
+                ownerdraw CG_TEAM_COLORIZED
+                ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/teamonm.tga"
+        }
 
 		itemDef {
-			name "SelfBLeft"
-			rect 132 17 16 16
-			visible 1
-			decoration
-			ownerdraw CG_TEAM_COLORIZED
-			ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
-			style WINDOW_STYLE_FILLED
-			background "ui/assets/hud/teamonr.tga"
-		}
-	}
+                name "SelfBLeft"
+                rect 163 17 16 16
+                visible 1
+                decoration
+                ownerdraw CG_TEAM_COLORIZED
+                ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
+                style WINDOW_STYLE_FILLED
+                background "ui/assets/hud/teamonr.tga"
+        }
+}
 
 // this is the item def for the 1st place text
-	menuDef {
+menuDef {
 		name "scores"
 		widescreen WIDESCREEN_LEFT
 		fullScreen MENU_FALSE
 		visible MENU_TRUE
-		rect 9 0 120 40
+		rect 40 0 120 40
 
 		itemDef {
-			name "1stplace"
-			ownerdraw CG_1ST_PLACE_SCORE
-			rect 0 19 136 40
-			visible 1
-			textscale .22
-			decoration
-		}
+                name "1stplace"
+                ownerdraw CG_1ST_PLACE_SCORE
+                rect 0 19 136 40
+                visible 1
+                textscale .22
+                decoration
+        }
 
 		// this is the item def for the 2nd place text
 		itemDef {
-			name "2ndplace"
-			ownerdraw CG_2ND_PLACE_SCORE
-			rect 0 36 136 40
-			visible 1
-			textscale .22
-			decoration
-		}
-	}
+                name "2ndplace"
+                ownerdraw CG_2ND_PLACE_SCORE
+                rect 0 36 136 40
+                visible 1
+                textscale .22
+                decoration
+        }
+}
 
 // 1FCTF FLAG STATUS
 menuDef {
@@ -860,15 +940,15 @@ menuDef {
         widescreen WIDESCREEN_LEFT
         fullScreen MENU_FALSE
         visible MENU_TRUE
-        rect 7 17 32 256
+        rect 38 17 32 256
 
-        itemDef {
+		itemDef {
                 name "oneflagstatus"
                 rect 0 0 13 13
                 visible 1
                 decoration
                 ownerdraw CG_ONEFLAG_STATUS
-                }
+        }
 }
 
 //**************************************************** PLAYER PICKUPS **********
@@ -886,7 +966,7 @@ menuDef {
                 ownerdraw CG_AREA_POWERUP
                 special 4     //space between icons
                 align HUD_VERTICAL
-                }
+        }
 }
 
 // USEABLE ITEMS - kamikaze, invulnerability, medkit, teleporter
@@ -901,7 +981,7 @@ menuDef {
                 rect 0 0 20 20
                 visible 1
                 ownerdraw CG_PLAYER_ITEM
-                }
+        }
 }
 
 // TEAM POWERUPS - armor regen, doubler, guard, scout
@@ -915,7 +995,7 @@ menuDef {
                 rect 90 0 20 20
                 visible 1
                 ownerdraw CG_CTF_POWERUP
-                }
+        }
 }
 
 //*************************************************** PLAYER HAS FLAG **********
@@ -932,7 +1012,7 @@ menuDef {
                 background "ui/assets/hud/flag"
                 visible 1
                 ownerdrawflag CG_SHOW_IF_PLAYER_HAS_FLAG
-                }
+        }
 
         itemDef {
                 name "animated flag icon"
@@ -940,7 +1020,7 @@ menuDef {
                 visible 1
                 style WINDOW_STYLE_FILLED
                 ownerdraw CG_PLAYER_HASFLAG
-                }
+        }
 }
 
 //******************************************************** OBITUARIES **********
@@ -962,7 +1042,7 @@ menuDef {
                 textscale .22
                 cvarTest "cg_gametype"
                 hideCvar { "2" ; "12" }
-                }
+        }
 }
 
 menuDef {
@@ -981,7 +1061,7 @@ menuDef {
                 textscale .22
                 cvarTest "cg_gametype"
                 showCvar { "12" }
-                }
+        }
 }
 
 //********************************************************* CHAT AREA **********
@@ -994,44 +1074,44 @@ menuDef {
 		rect 0 0 32 256
 
 		itemDef {
-			name chatWindow
-			ownerdraw CG_AREA_NEW_CHAT
-			textscale 0.22
-			rect 5 287 634 120
-			visible 1
-			decoration
+                name chatWindow
+                ownerdraw CG_AREA_NEW_CHAT
+                textscale 0.22
+                rect 5 287 634 120
+                visible 1
+                decoration
 		}
 }
 
 //=================================================================================
-	menuDef {
-		name "RaceHUD"
+menuDef {
+        name "RaceHUD"
         widescreen WIDESCREEN_CENTER
-		fullScreen MENU_FALSE
-		visible MENU_TRUE
-		rect 263 20 115 25
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 263 375 115 25
 
-		itemDef {
-			name "raceStatus"
-			rect 58 22 110 15
-			visible 1
-			decoration
-			align 1
-			textscale 0.25
-			ownerdraw CG_RACE_STATUS
-			cvarTest "cg_gametype"
-			showCvar { "2" }
-		}
+        itemDef {
+                name "raceStatus"
+                rect 58 0 110 15
+                visible 1
+                decoration
+                align 1
+                textscale 0.25
+                ownerdraw CG_RACE_STATUS
+                cvarTest "cg_gametype"
+                showCvar { "2" }
+        }
 
-		itemDef {
-			name "raceTimes"
-			rect 25 34 110 15
-			visible 1
-			decoration
-			align 0
-			textscale 0.25
-			ownerdraw CG_RACE_TIMES
-			cvarTest "cg_gametype"
-			showCvar { "2" }
-		}
-	}
+        itemDef {
+                name "raceTimes"
+                rect 25 12 110 15
+                visible 1
+                decoration
+                align 0
+                textscale 0.25
+                ownerdraw CG_RACE_TIMES
+                cvarTest "cg_gametype"
+                showCvar { "2" }
+        }
+}
