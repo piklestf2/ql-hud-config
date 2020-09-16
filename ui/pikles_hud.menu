@@ -204,7 +204,7 @@ menuDef {
                 forecolor 1 1 1 1
                 textscale .60
                 ownerdraw CG_PLAYER_HEALTH
-                addColorRange -999 50 1 0 0 1
+                addColorRange -999 50 1 0.29 0.29 1
                 addColorRange 50 100 1 1 1 1
                 addColorRange 101 999 0.29 0.65 1 1
                 }
@@ -269,7 +269,7 @@ menuDef {
                 ownerdraw CG_PLAYER_ARMOR_VALUE
                 addColorRange -999 25 1 0.73 0 1
                 addColorRange 26 100 1 1 1 1
-                addColorRange 101 999 0 0.92 0.20 1
+                addColorRange 101 999 0.25 0.92 0 1
                 }
 }
 
@@ -279,48 +279,24 @@ menuDef {
         name "Timer"
         fullScreen MENU_FALSE
         visible 1
-        rect 280 5 100 20
-
-        itemDef {
-                name "Win Limit"
-                rect 70 13 40 12
-                visible 1
-                textstyle ITEM_TEXTSTYLE_SHADOWED
-                forecolor 1 1 1 1
-                textscale .26
-                ownerdraw CG_CAPFRAGLIMIT
-                }
+        rect 300 305 100 20
 
         itemDef {
                 name "Timer"
-                rect 25 13 82 20
+                rect 20 13 40 20
+                align 1
+                widescreen 2
                 visible 1
                 textstyle ITEM_TEXTSTYLE_SHADOWED
                 forecolor 1 1 1 1
-                textscale .28
+                textscale .32
                 ownerdraw CG_LEVELTIMER
-                }
-
-        itemDef {
-                name "timer Icon shadow"
-                rect 6 1 14 14
-                style WINDOW_STYLE_FILLED
-                backcolor 0 0 0 .7
-                background "icons/icon_time.tga"
-                visible 1
-                }
-
-        itemDef {
-                name "timer Icon"
-                rect 5 0 14 14
-                style WINDOW_STYLE_FILLED
-                backcolor .7 .7 .7 .7
-                background "icons/icon_time.tga"
-                visible 1
                 }
 }
 
 //************************************************************ SCORES **********
+
+// TODO: add winlimit again
 
 // RED TEAM BAR TOP
 	menuDef {
@@ -943,6 +919,7 @@ menuDef {
 }
 
 //*************************************************** PLAYER HAS FLAG **********
+
 menuDef {
         name "player Has Flag"
         visible 1
@@ -967,36 +944,64 @@ menuDef {
 }
 
 //******************************************************** OBITUARIES **********
+
 // who killed who, what weapon they used
 menuDef {
-        name "obituaries area"
-        visible 1
-        rect 190 18 65 12
+		name "obit area"
+		widescreen WIDESCREEN_LEFT
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 190 18 65 12
 
-        itemDef {
-                name "obituaries"
+		itemDef {
+                name hudObit
+                ownerdraw CG_PLAYER_OBIT
                 rect 0 0 65 12
                 visible 1
+                decoration
                 textscale .22
+                cvarTest "cg_gametype"
+                hideCvar { "2" ; "12" }
+                }
+}
+
+menuDef {
+		name "obit area"
+		widescreen WIDESCREEN_LEFT
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 220 18 65 12
+
+		itemDef {
+                name hudObit
                 ownerdraw CG_PLAYER_OBIT
+                rect 0 0 65 12
+                visible 1
+                decoration
+                textscale .22
+                cvarTest "cg_gametype"
+                showCvar { "12" }
                 }
 }
 
 //********************************************************* CHAT AREA **********
+
 menuDef {
-        name "chat area"
-        visible 1
-        rect 0 0 32 256
+		name "chat area"
+		widescreen WIDESCREEN_LEFT
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 0 0 32 256
 
-        itemDef {
-                name "chat display"
-                rect 5 287 634 120
-                visible 1
-                ownerdraw CG_AREA_NEW_CHAT
-                }
+		itemDef {
+			name chatWindow
+			ownerdraw CG_AREA_NEW_CHAT
+			textscale 0.22
+			rect 5 287 634 120
+			visible 1
+			decoration
+		}
 }
-
-//TODO below
 
 //=================================================================================
 	menuDef {
