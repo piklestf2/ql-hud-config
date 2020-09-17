@@ -6,4 +6,6 @@
 !pikles_settings.cfg
 !ui/
 !ui/*
+!screenshots/
+!screenshots/*
 !.gitignore
