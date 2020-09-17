@@ -283,6 +283,7 @@ menuDef {
 
         itemDef {
                 name "Timer"
+                rect 0 0 0 0
                 align 1
                 widescreen 2
                 visible 1
