@@ -1052,14 +1052,14 @@ menuDef {
  * 		rect 630 20 0 0
  *
  * 		itemDef {
- *                 name "hudObit"
- *                 rect 0 0 0 0
- *                 visible 1
- *                 decoration
- *                 align 2
- *                 textscale .22
- *                 ownerdraw CG_PLAYER_OBIT
- *         }
+ *              name "hudObit"
+ *              rect 0 0 0 0
+ *              visible 1
+ *              decoration
+ *              align 2
+ *              textscale .22
+ *              ownerdraw CG_PLAYER_OBIT
+ *      }
  * }
  */
 
