@@ -279,11 +279,10 @@ menuDef {
         name "Timer"
         fullScreen MENU_FALSE
         visible 1
-        rect 300 305 100 20
+        rect 320 318 0 0
 
         itemDef {
                 name "Timer"
-                rect 20 13 40 20
                 align 1
                 widescreen 2
                 visible 1
