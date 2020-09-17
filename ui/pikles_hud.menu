@@ -20,6 +20,54 @@ menuDef {
         rect 310 230 20 20
 
         itemDef {
+                name "hmid"
+                visible 1
+                backcolor 0.69 0.69 0.69 0.20
+                rect 0 10 20 1
+                style WINDOW_STYLE_FILLED
+        }
+
+        itemDef {
+                name "htop"
+                visible 1
+                backcolor 0 0 0 0.39
+                rect 0 9 20 1
+                style WINDOW_STYLE_FILLED
+        }
+
+        itemDef {
+                name "hbot"
+                visible 1
+                backcolor 0 0 0 0.39
+                rect 0 11 20 1
+                style WINDOW_STYLE_FILLED
+        }
+
+        itemDef {
+                name "vmid"
+                visible 1
+                backcolor 0.69 0.69 0.69 0.20
+                rect 10 0 1 20
+                style WINDOW_STYLE_FILLED
+        }
+
+        itemDef {
+                name "vleft"
+                visible 1
+                backcolor 0 0 0 0.39
+                rect 9 0 1 20
+                style WINDOW_STYLE_FILLED
+        }
+
+        itemDef {
+                name "vright"
+                visible 1
+                backcolor 0 0 0 0.39
+                rect 11 0 1 20
+                style WINDOW_STYLE_FILLED
+        }
+
+        itemDef {
                 name "dot"
                 visible 1
                 backcolor 0 1 0 1
@@ -120,54 +168,6 @@ menuDef {
                 visible 1
                 backcolor 0.78 1 0.78 0.59
                 rect 9 19 3 1
-                style WINDOW_STYLE_FILLED
-        }
-
-        itemDef {
-                name "hmid"
-                visible 1
-                backcolor 0.69 0.69 0.69 0.20
-                rect 0 10 20 1
-                style WINDOW_STYLE_FILLED
-        }
-
-        itemDef {
-                name "htop"
-                visible 1
-                backcolor 0 0 0 0.39
-                rect 0 9 20 1
-                style WINDOW_STYLE_FILLED
-        }
-
-        itemDef {
-                name "hbot"
-                visible 1
-                backcolor 0 0 0 0.39
-                rect 0 11 20 1
-                style WINDOW_STYLE_FILLED
-        }
-
-        itemDef {
-                name "vmid"
-                visible 1
-                backcolor 0.69 0.69 0.69 0.20
-                rect 10 0 1 20
-                style WINDOW_STYLE_FILLED
-        }
-
-        itemDef {
-                name "vleft"
-                visible 1
-                backcolor 0 0 0 0.39
-                rect 9 0 1 20
-                style WINDOW_STYLE_FILLED
-        }
-
-        itemDef {
-                name "vright"
-                visible 1
-                backcolor 0 0 0 0.39
-                rect 11 0 1 20
                 style WINDOW_STYLE_FILLED
         }
 }
