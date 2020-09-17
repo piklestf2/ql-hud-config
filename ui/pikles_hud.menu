@@ -1041,6 +1041,28 @@ menuDef {
 
 //******************************************************** KILL FEED ***********
 
+/* Attempt at right-aligned kill feed; align seems to be broken for this
+ * ownerdraw in particular...
+ *
+ * menuDef {
+ * 		name "kill feed"
+ * 		widescreen WIDESCREEN_RIGHT
+ * 		fullScreen MENU_FALSE
+ * 		visible MENU_TRUE
+ * 		rect 630 20 0 0
+ *
+ * 		itemDef {
+ *                 name "hudObit"
+ *                 rect 0 0 0 0
+ *                 visible 1
+ *                 decoration
+ *                 align 2
+ *                 textscale .22
+ *                 ownerdraw CG_PLAYER_OBIT
+ *         }
+ * }
+ */
+
 // who killed who, what weapon they used
 menuDef {
 		name "obit area"
