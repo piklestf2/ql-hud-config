@@ -31,7 +31,7 @@
 //****************************************** VILE CROSSHAIR ********************
 
 menuDef {
-        name "vile crosshair"
+        name "vile csgo crosshair"
         visible 1
         rect 310 230 20 20
 
