@@ -192,13 +192,14 @@ menuDef {
 menuDef {
         name "health value and icon"
         visible 1
-        rect 193 300 0 0
+        widescreen WIDESCREEN_CENTER
+        rect 155 300 0 0
 
         itemDef {
                 name "health icon shadow"
-                backcolor 0 0 0 .8
                 rect 1 9 18 18
                 visible 1
+                backcolor 0 0 0 .8
                 style WINDOW_STYLE_FILLED
                 background "ui/assets/hud/health.tga"
         }
@@ -206,16 +207,17 @@ menuDef {
         itemDef {
                 name "health icon"
                 rect 0 8 18 18
-                ownerdraw CG_TEAM_COLORIZED
                 visible 1
+                ownerdraw CG_TEAM_COLORIZED
                 style WINDOW_STYLE_FILLED
                 background "ui/assets/hud/health.tga"
         }
 
         itemDef {
                 name "health value"
-                rect 22 0 0 0
+                rect 24 0 0 0
                 visible 1
+                align 0
                 textstyle ITEM_TEXTSTYLE_SHADOWED
                 forecolor 1 1 1 1
                 textscale .60
@@ -226,37 +228,12 @@ menuDef {
         }
 }
 
-//************************************************* AMMO ***********************
-
-menuDef {
-        name "Ammo"
-        visible 1
-        rect 380 300 0 0
-
-        itemDef {
-                name "weapon icon"
-                rect 55 7 20 20
-                visible 1
-                ownerdraw CG_PLAYER_AMMO_ICON2D
-        }
-
-        itemDef {
-                name "ammo number value"
-                rect 0 0 0 0
-                visible 1
-                textstyle ITEM_TEXTSTYLE_SHADOWED
-                textscale .60
-                ownerdraw CG_PLAYER_AMMO_VALUE
-                addColorRange -999 5 1 0 0 1
-                addColorRange 6 999 1 1 1 1
-        }
-}
-
 //******************************** ARMOR VALUE + ICON **************************
 menuDef {
         name "Armor"
         visible 1
-        rect 193 330 0 0
+        widescreen WIDESCREEN_CENTER
+        rect 155 330 0 0
 
         itemDef {
                 name "armor icon shadow"
@@ -278,8 +255,9 @@ menuDef {
 
         itemDef {
                 name "armor value"
-                rect 23 0 0 0
+                rect 25 0 0 0
                 visible 1
+                align 0
                 textstyle ITEM_TEXTSTYLE_SHADOWED
                 textscale .4
                 ownerdraw CG_PLAYER_ARMOR_VALUE
@@ -289,7 +267,35 @@ menuDef {
         }
 }
 
-//******************************************** TIMER **************
+//************************************************* AMMO ***********************
+
+menuDef {
+        name "Ammo"
+        visible 1
+        widescreen WIDESCREEN_CENTER
+        rect 460 300 0 0
+
+        itemDef {
+                name "weapon icon"
+                rect 8 7 20 20
+                visible 1
+                ownerdraw CG_PLAYER_AMMO_ICON2D
+        }
+
+        itemDef {
+                name "ammo number value"
+                rect 1 0 0 0
+                visible 1
+                align 2
+                textstyle ITEM_TEXTSTYLE_SHADOWED
+                textscale .60
+                ownerdraw CG_PLAYER_AMMO_VALUE
+                addColorRange -999 5 1 0 0 1
+                addColorRange 6 999 1 1 1 1
+        }
+}
+
+//************************************************* TIMER **********************
 
 menuDef {
         name "Timer"
