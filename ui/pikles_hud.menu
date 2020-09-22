@@ -978,34 +978,21 @@ menuDef {
 
 // POWERUPS - quad-damage, haste, regeneration, etc.
 menuDef {
-        name "powerup display"
-        visible 1
-        //TODO widescreen
-        rect 5 70 48 24
+        name "powerup"
+        widescreen WIDESCREEN_RIGHT
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 550 240 50 80
 
         itemDef {
-                name "player powerup"
-                rect 0 0 20 20
+                name "powerupArea"
+                rect 0 0 25 25
                 visible 1
+                decoration
                 ownerdraw CG_AREA_POWERUP
-                special 4     //space between icons
+                special 4           // spacing between icons
                 align HUD_VERTICAL
-        }
-}
 
-// USEABLE ITEMS - kamikaze, invulnerability, medkit, teleporter
-menuDef {
-        name "usable items display"
-        visible 1
-        //TODO widescreen
-        rect 272 442 26 26
-
-
-        itemDef {
-                name "player item"
-                rect 0 0 20 20
-                visible 1
-                ownerdraw CG_PLAYER_ITEM
         }
 }
 
@@ -1013,14 +1000,49 @@ menuDef {
 menuDef {
         name "team powerups display"
         visible MENU_TRUE
-        //TODO widescreen
-        rect 345 442 26 26
+        widescreen WIDESCREEN_CENTER
+        rect 360 445 0 0
 
         itemDef {
                 name "player team powerup"
-                rect 90 0 20 20
+                rect 0 0 25 25
                 visible 1
+                decoration
                 ownerdraw CG_CTF_POWERUP
+        }
+}
+
+// USEABLE ITEMS - kamikaze, invulnerability, medkit, teleporter
+menuDef {
+        name "pickups"
+        widescreen WIDESCREEN_CENTER
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 255 445 0 0
+
+        itemDef {
+                name "playeritem"
+                rect 0 25 25 25
+                visible 1
+                decoration
+                ownerdraw CG_PLAYER_ITEM
+        }
+}
+
+// Key
+menuDef {
+        name "key"
+        widescreen WIDESCREEN_RIGHT
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 605 445 0 0
+        itemDef {
+                name "key icon"
+                rect 0 0 25 25
+                visible 1
+                decoration
+                style WINDOW_STYLE_FILLED
+                ownerdraw CG_PLAYER_HASKEY
         }
 }
 
@@ -1029,15 +1051,15 @@ menuDef {
 menuDef {
         name "player Has Flag"
         visible 1
-        //TODO widescreen
-        rect 300 442 26 26
+        widescreen WIDESCREEN_CENTER
+        rect 300 440 0 0
 
         itemDef {
                 name "green flashing background"
                 rect 0 0 40 36
+                visible 1
                 style WINDOW_STYLE_SHADER
                 background "ui/assets/hud/flag"
-                visible 1
                 ownerdrawflag CG_SHOW_IF_PLAYER_HAS_FLAG
         }
 
