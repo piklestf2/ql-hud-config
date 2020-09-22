@@ -378,7 +378,7 @@ menuDef {
                 name "roundTimer"
                 align ITEM_ALIGN_LEFT
                 style WINDOW_STYLE_EMPTY
-                rect 9 55 50 12
+                rect 10 55 50 12
                 visible 1
                 textstyle ITEM_TEXTSTYLE_SHADOWED
                 decoration
@@ -391,7 +391,7 @@ menuDef {
                 name "overtime"
                 align ITEM_ALIGN_LEFT
                 style WINDOW_STYLE_EMPTY
-                rect 9 55 50 12
+                rect 10 55 50 12
                 visible 1
                 textstyle ITEM_TEXTSTYLE_SHADOWED
                 decoration
@@ -979,20 +979,19 @@ menuDef {
 // POWERUPS - quad-damage, haste, regeneration, etc.
 menuDef {
         name "powerup"
-        widescreen WIDESCREEN_RIGHT
+        widescreen WIDESCREEN_LEFT
         fullScreen MENU_FALSE
         visible MENU_TRUE
-        rect 550 240 50 80
+        rect 5 70 0 0
 
         itemDef {
                 name "powerupArea"
                 rect 0 0 25 25
                 visible 1
-                decoration
                 ownerdraw CG_AREA_POWERUP
-                special 4           // spacing between icons
-                align HUD_VERTICAL
-
+                decoration
+                special 5           //spacing between multiple powerups
+                align HUD_VERTICAL  //stack multiple powerups vertically
         }
 }
 
