@@ -1,10 +1,10 @@
 /*
- Quake Live Heads-Up Display
- Default HUD - Edited Version (cleaned up, everything is labeled)
- may 2009, Borgondio
 
- Would you like to see a tutorial?
- http://quakelivehud.blogspot.com
+ Pikles QL HUD (PQL HUD???)
+
+ Thanks to:
+     Borgondio (http://quakelivehud.blogspot.com)
+     vile
 
 */
 
@@ -1153,7 +1153,8 @@ menuDef {
 		}
 }
 
-//=================================================================================
+//********************************************************* RACE HUD ***********
+
 menuDef {
         name "RaceHUD"
         widescreen WIDESCREEN_CENTER
