@@ -1012,7 +1012,7 @@ menuDef {
         }
 }
 
-// USEABLE ITEMS - kamikaze, invulnerability, medkit, teleporter
+// USABLE ITEMS - kamikaze, invulnerability, medkit, teleporter
 menuDef {
         name "pickups"
         widescreen WIDESCREEN_CENTER
