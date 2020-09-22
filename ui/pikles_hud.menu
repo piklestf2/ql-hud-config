@@ -1018,12 +1018,11 @@ menuDef {
         widescreen WIDESCREEN_CENTER
         fullScreen MENU_FALSE
         visible MENU_TRUE
-        //TODO: move to the right of ammo
-        rect 255 445 0 0
+        rect 495 304 0 0
 
         itemDef {
                 name "playeritem"
-                rect 0 25 25 25
+                rect 0 0 25 25
                 visible 1
                 decoration
                 ownerdraw CG_PLAYER_ITEM
