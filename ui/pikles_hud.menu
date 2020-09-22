@@ -980,6 +980,7 @@ menuDef {
 menuDef {
         name "powerup display"
         visible 1
+        //TODO widescreen
         rect 5 70 48 24
 
         itemDef {
@@ -996,6 +997,7 @@ menuDef {
 menuDef {
         name "usable items display"
         visible 1
+        //TODO widescreen
         rect 272 442 26 26
 
 
@@ -1011,6 +1013,7 @@ menuDef {
 menuDef {
         name "team powerups display"
         visible MENU_TRUE
+        //TODO widescreen
         rect 345 442 26 26
 
         itemDef {
@@ -1026,6 +1029,7 @@ menuDef {
 menuDef {
         name "player Has Flag"
         visible 1
+        //TODO widescreen
         rect 300 442 26 26
 
         itemDef {
